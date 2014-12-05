@@ -1,0 +1,39 @@
+body
+{
+  background-color: #000;
+  background-image: none;
+}
+
+#remoteVideos video {
+  height: 100%%;
+  width: 100%%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+#localVideo {
+  height: 150px;
+  position:absolute;
+  bottom:30px;
+  right:30px;
+  z-index:2;
+}
+
+#logo {
+  position:absolute;
+  top:30px;
+  left:30px;
+  z-index:3;
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+  /* Netscape */
+  -moz-opacity: 0.5;
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+  /* Good browsers */
+  opacity: 0.5;
+}

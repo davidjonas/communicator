@@ -37,5 +37,6 @@ var webrtc = new SimpleWebRTC({
 
 webrtc.on('readyToCall', function () {
     webrtc.joinRoom(room);
-    $("#flash").fadeOut()
 });
+
+$(function(){$("#flash").fadeOut()})

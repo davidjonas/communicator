@@ -41,6 +41,7 @@ class RTCTemplate(Template):
             <div id="remoteVideos"></div>
             <video id="localVideo"></video>
             <img id="logo" src="/static/images/hku.png"/>
+            <div id="message">Dial M for media</div>
             <div id="flash"></div>
         """ % {'room': room}
 

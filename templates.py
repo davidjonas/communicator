@@ -30,6 +30,8 @@ class RTCTemplate(Template):
         super(RTCTemplate, self).__init__(parent)
 
         self.addJSFile("/static/rtc/latest.js")
+        self.addJSFile("https://cdn.socket.io/socket.io-1.2.1.js")
+        self.addJSFile("http://code.createjs.com/soundjs-0.5.2.min.js")
         self.addJSFile("/static/rtc/hkuRTC.js")
         self.addCSSFile("/static/rtc/hkuRTC.css")
 
@@ -39,6 +41,7 @@ class RTCTemplate(Template):
             <div id="remoteVideos"></div>
             <video id="localVideo"></video>
             <img id="logo" src="/static/images/hku.png"/>
+            <div id="flash"></div>
         """ % {'room': room}
 
         self.add(html)

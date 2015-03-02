@@ -1,5 +1,5 @@
 var server = require('http').createServer(),
-        io = require('socket.io')(server, {'transports': ['websocket', 'polling']});
+        io = require('socket.io')(server, {'transports': ['websocket', 'htmlfile', 'xhr-polling', 'jsonp-polling', 'polling']});
 
 //port to listen can be set through command line argument by running 'node server.js [port]' (it defaults to 8080)
 var port = (process.argv.length >= 3) ? process.argv[2] : 8080;
